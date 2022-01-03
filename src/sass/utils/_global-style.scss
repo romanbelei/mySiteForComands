@@ -1,0 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  @include font(16px, 400, 38px, 0.03em);
+  color: $primary-text-color;
+  background-color: $primary-color;
+  min-width: 320px;
+}
+
+// body.modal-open {
+//   overflow: hidden;
+// }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

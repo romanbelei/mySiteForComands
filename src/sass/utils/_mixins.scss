@@ -1,0 +1,25 @@
+// ----mixin для шрифта
+@mixin font($fz, $fw, $lh, $ls) {
+  font-size: $fz;
+  font-weight: $fw;
+  line-height: $lh / $fz;
+  letter-spacing: $ls;
+}
+// @include font($fz, $fw, $lh, $ls);
+
+// ----mixin для флекса
+@mixin flex-center($type: flex, $justify: center, $align: center) {
+  display: $type;
+  justify-content: $justify;
+  align-items: $align;
+}
+// @include flex-center($type, $justify, $align);
+// @include flex();
+
+// ----mixin для background image
+@mixin background-size-repeat-position {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+// @include background-size-repeat-position();

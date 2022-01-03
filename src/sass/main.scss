@@ -3,5 +3,22 @@
  * Все паршалы подключаются сюда.
  */
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+// Подключение переменных и глобальных стилей
+@import './utils/vars';
+@import './utils/mixins';
+@import './utils/reset';
+@import './utils/global-style';
+@import './utils/visually-hidden';
+
+// Подключение файлов стилей для переиспользованных элементов
+@import './components/container.scss';
+@import './components/sections.scss';
+
+// Подключение файлов стилей для основных компонентов страницы
+@import './layout/header';
+@import './layout/hero';
+@import './layout/why_us';
+@import './layout/catalog-preview';
+@import './layout/how-we-work';
+@import './layout/reviews';
+@import './layout/footer';
