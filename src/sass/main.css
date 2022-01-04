@@ -139,11 +139,50 @@ img {
   }
 }
 
-.test {
-  padding: 30px;
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
-.test__item {
+@media screen and (min-width: 767px) {
+  .header {
+    background-color: #ca0000;
+  }
+}
+
+.header__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75px;
+}
+
+.header__nav--list {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav--list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.header__nav--item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,14 +192,168 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 250px;
-  height: 60px;
-  margin-bottom: 15px;
 }
 
-.test__list {
+.header__nav--item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.header__nav--link {
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav--link {
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 1.22;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header__nav--link {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .header__nav--link--penult, .header__nav--link--last {
+    font-weight: 800;
+  }
+}
+
+.header__nav--link:hover, .header__nav--link:focus {
+  color: #acc8de;
+}
+
+.header__socicon--link {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header__socicon--link {
+    display: none;
+  }
+}
+
+.header__socicon--link:hover, .header__socicon--link:focus {
+  color: #acc8de;
+}
+
+.header__socicon--item:not(:last-child) {
+  margin-right: 6px;
+}
+
+@media screen and (min-width: 1280px) {
+  .header__socicon--item:not(:last-child) {
+    margin-right: 13px;
+  }
+}
+
+.soc-icon {
+  fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .soc-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .soc-icon {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__contact--list {
+    display: none;
+  }
+}
+
+.header__contact--link {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+  .header__contact--link {
+    font-size: 12px;
+    line-height: 1.22;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header__contact--link {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.header__contact--link:hover, .header__contact--link:focus {
+  color: #acc8de;
+}
+
+.phone-icon {
+  fill: currentColor;
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .phone-icon {
+    display: block;
+    width: 10px;
+    height: 18px;
+    margin-right: 6px;
+  }
+}
+
+.catalog-icon {
+  fill: currentColor;
+  width: 13px;
+  height: 5px;
+  margin-left: 4px;
+}
+
+@media screen and (min-width: 767px) {
+  .header__menu-button {
+    display: none;
+  }
+}
+
+.test-anchor {
+  display: block;
+  height: 500px;
+  border: 1px solid #ececec;
 }
 /*# sourceMappingURL=main.css.map */
