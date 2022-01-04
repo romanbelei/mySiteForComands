@@ -1,19 +1,141 @@
-.test {
-  padding: 30px;
+.header {
+  position: sticky;
+  top: 0;
+  @media screen and (min-width: 767px) {
+    background-color: $primary-text-color;
+  }
 }
-
-.test__item {
+.header__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+}
+.header__nav--list {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.header__nav--item {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  width: 250px;
-  height: 60px;
-  // border: 2px solid salmon;
-  // border-radius: 5px;
-
-  margin-bottom: 15px;
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
 }
-.test__list {
+.header__nav--link {
+  color: $primary-color;
   display: flex;
+  align-items: center;
+  text-align: left;
+  letter-spacing: 0.03em;
+  @media screen and (min-width: 768px) {
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 1.22;
+  }
+  @media screen and (min-width: 1280px) {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.25;
+    &--penult,
+    &--last {
+      font-weight: 800;
+    }
+  }
+  &:hover,
+  &:focus {
+    color: $primary-background-color;
+  }
+}
+.header__socicon--link {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &:hover,
+  &:focus {
+    color: $primary-background-color;
+  }
+}
+.header__socicon--item {
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-right: 13px;
+    }
+  }
+}
+
+.soc-icon {
+  fill: currentColor;
+  @media screen and (min-width: 768px) {
+    width: 16px;
+    height: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+  }
+}
+.header__contact--list {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.header__contact--link {
+  color: $primary-color;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-align: right;
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.22;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  &:hover,
+  &:focus {
+    color: $primary-background-color;
+  }
+}
+.phone-icon {
+  fill: currentColor;
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: block;
+    width: 10px;
+    height: 18px;
+    margin-right: 6px;
+  }
+}
+.catalog-icon {
+  fill: currentColor;
+  width: 13px;
+  height: 5px;
+  margin-left: 4px;
+}
+.header__menu-button {
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+.test-anchor {
+  display: block;
+  height: 500px;
+  border: 1px solid #ececec;
 }

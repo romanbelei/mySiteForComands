@@ -1,21 +1,72 @@
-<div class="container">
-    <div class="test">
-        <ul class="test__list">
-            <li class="test__item"><a class="test__link" href="#hero">Головна</a></li>
-            <li class="test__item"><a class="test__link" href="#why_we">Чому ми</a></li>
-            <li class="test__item"><a class="test__link" href="#catalog">Каталог</a></li>
-            <li class="test__item"><a class="test__link" href="#how_we_work">Як ми працюємо</a></li>
-            <li class="test__item"><a class="test__link" href="#reviews">Відгуки</a></li>
-
-        </ul>
+<header class="header">
+    <div class="header__block container">
+        <ul class="header__nav--list">
+                <li class="header__nav--item"><a class="header__nav--link" href="#hero">Головна</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="#why_we">Чому ми</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="">
+                    Каталог
+                    <svg class="catalog-icon">
+                        <use href="./images/sprite.svg#catalog"></use>
+                    </svg>
+                </a></li>
+                <li class="header__nav--item"><a class="header__nav--link header__nav--link--penult" href="#how_we_work">Як ми працюємо</a></li>
+                <li class="header__nav--item"><a class="header__nav--link header__nav--link--last" href="#reviews">Відгуки</a></li>
+            </ul>
+        <div class="header__socicon">
+            <ul class="header__socicon--link">
+                <li class="header__socicon--item">
+                    <a href="" class="header__socicon--link">
+                        <svg class="soc-icon">
+                            <use xlink:href="./images/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header__socicon--item">
+                    <a href="" class="header__socicon--link">
+                        <svg class="soc-icon">
+                            <use xlink:href="./images/sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header__socicon--item">
+                    <a href="" class="header__socicon--link">
+                        <svg class="soc-icon">
+                            <use xlink:href="./images/sprite.svg#telegram"></use>
+                            <!-- в Sprit В iконцi telegram fill не забраний -->
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__contact">
+          <ul class=header__contact--list>
+            <li class="header__contact--item">
+               <a class="header__contact--link" href="#hero">
+                <svg class="phone-icon">
+                    <use href="./images/sprite.svg#smartphone"></use>
+                </svg>
+                +38(098) 314 1426
+            </a>
+            </li>
+            <li class="header__contact--item">
+               <a class="header__contact--link" href="#hero">Доставка</a>
+            </li>
+           </ul>
+        </div>
+        <button class="header__menu-button js-close-menu">
+            <svg width="40" height="40" aria-label="закривання мобільного меню">
+                <use class="icon-menu" href="./images/sprite.svg#menu_mobile"></use>
+            </svg>
+        </button>
+        
     </div>
-</div>
+    
+    
+</header>
+<div class="test-anchor container"><p id="#hero">HERO</p></div>
+<div class="test-anchor container"><p id="#why_we">WHY_WE</p></div>
+<div class="test-anchor container"><p id="#how_we_work">HOW_WE_WORK</p></div>
+<div class="test-anchor container"><p id="#reviews">REVIEWS</p></div>
+    
+
 <a class="test__link" href="./portfolio.html"></a>
-<!-- <ul class="navi"> -->
-    <!-- <li class="test__ite"><a class="test__link" href="./portfolio.html"></a></li> -->
-    <!-- <li class="test__link"><a class="link" href="#hero">Головна</a></li>
-    <li class="nav_item list"><a class="link" href="#why_we">Чому ми</a></li>
-    <li class="nav_item list"><a class="link" href="#catalog">Каталог</a></li>
-    <li class="nav_item list"><a class="link" href="#how_we_work">Як ми працюємо</a></li> -->
-    <!-- <li class="nav_item list"><a class="link" href="#reviews">Відгуки</a></li> -->
-<!-- </ul> -->
