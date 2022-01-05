@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"pzHV":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["pzHV"], null)
-//# sourceMappingURL=/mySiteForComands/portfolio.23ae9377.js.map
+//# sourceMappingURL=/mySiteForComands/portfolio.a105b965.js.map
