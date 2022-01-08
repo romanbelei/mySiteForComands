@@ -1,68 +1,82 @@
 <header class="header">
     <div class="header__block container">
-        <ul class="header__nav--list">
-                <li class="header__nav--item"><a class="header__nav--link" href="#hero">Головна</a></li>
-                <li class="header__nav--item"><a class="header__nav--link" href="#why_we">Чому ми</a></li>
-                <li class="header__nav--item"><a class="header__nav--link" href="">
-                    Каталог
-                    <svg class="catalog-icon">
-                        <use href="./images/sprite.svg#catalog"></use>
-                    </svg>
-                </a></li>
-                <li class="header__nav--item"><a class="header__nav--link header__nav--link--penult" href="#how_we_work">Як ми працюємо</a></li>
-                <li class="header__nav--item"><a class="header__nav--link header__nav--link--last" href="#reviews">Відгуки</a></li>
-            </ul>
-        <div class="header__socicon">
-            <ul class="header__socicon--link">
-                <li class="header__socicon--item">
-                    <a href="https://www.instagram.com/fruit_bouquets.lviv/" class="header__socicon--link">
-                        <svg class="soc-icon">
-                            <use xlink:href="./images/sprite.svg#instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="header__socicon--item">
-                    <a href="https://www.facebook.com/oksana.fruitbouquets" class="header__socicon--link">
-                        <svg class="soc-icon">
-                            <use xlink:href="./images/sprite.svg#facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="header__socicon--item">
-                    <a href="https://t.me/Studio_Fruit_Bouquets" class="header__socicon--link">
-                        <svg class="soc-icon">
-                            <use xlink:href="./images/sprite.svg#telegram"></use>
-                            <!-- в Sprit В iконцi telegram fill не забраний -->
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="header__contact">
-          <ul class=header__contact--list>
-            <li class="header__contact--item">
-               <a class="header__contact--link" href="#hero">
-                <svg class="phone-icon">
-                    <use href="./images/sprite.svg#smartphone"></use>
-                </svg>
-                +38(098) 314 1426
-            </a>
-            </li>
-            <li class="header__contact--item">
-               <a class="header__contact--link" href="#hero">
-                <svg class="delivery-icon">
-                    <use href="./images/sprite.svg#delivery"></use>
-                </svg>
-                Доставка</a>
-            </li>
-           </ul>
-        </div>
-        <button class="header__menu-button js-close-menu">
-            <svg width="40" height="40" aria-label="закривання мобільного меню">
+        <button type="button" class="menu-button  js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="40" height="40" aria-label="мобільне меню">
                 <use class="icon-menu" href="./images/sprite.svg#menu_mobile"></use>
             </svg>
         </button>
-        
+        <!-- menu-button-open -->
+        <div class="menu-conteiner js-menu-container" id="mobile-menu">
+            <div class="header__logo"></div>
+            <button class="menu-button  js-close-menu">
+                <svg width="40" height="40" aria-label="закривання мобільного меню">
+                    <use class="icon-cross" href="./images/sprite.svg#close_button"></use>
+                </svg>
+            </button>
+            
+            <ul class="header__nav--list">
+                    <li class="header__nav--item"><a class="header__nav--link" href="#hero">Головна</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="#why_we">Чому ми</a></li>
+                    <li class="header__nav--item">
+                        <button class="header__nav--link header__catalog" data-modal-open >
+                            Каталог
+                            <svg class="catalog-icon">
+                                <use href="./images/sprite.svg#catalog"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="header__nav--item"><a class="header__nav--link header__nav--link--penult" href="#how_we_work">Як ми працюємо</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link header__nav--link--last" href="#reviews">Відгуки</a></li>
+                </ul>
+            <div class="header__socicon">
+                <ul class="header__socicon--link">
+                    <li class="header__socicon--item">
+                        <a href="https://www.instagram.com/fruit_bouquets.lviv/" class="header__socicon--link">
+                            <svg class="soc-icon">
+                                <use xlink:href="./images/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header__socicon--item">
+                        <a href="https://www.facebook.com/oksana.fruitbouquets" class="header__socicon--link">
+                            <svg class="soc-icon">
+                                <use xlink:href="./images/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header__socicon--item">
+                        <a href="https://t.me/Studio_Fruit_Bouquets" class="header__socicon--link">
+                            <svg class="soc-icon">
+                                <use xlink:href="./images/sprite.svg#telegram"></use>
+                                <!-- в Sprit В iконцi telegram fill не забраний -->
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__contact">
+            <ul class=header__contact--list>
+                <li class="header__contact--item">
+                <a class="header__contact--link" href="#hero">
+                    <svg class="phone-icon">
+                        <use href="./images/sprite.svg#smartphone"></use>
+                    </svg>
+                    +38(098) 314 1426
+                </a>
+                </li>
+                <li class="header__contact--item">
+                <button class="header__contact--link header__delivery" data-modal-open2>
+                    <svg class="delivery-icon">
+                        <use href="./images/sprite.svg#delivery"></use>
+                    </svg>
+                    Доставка
+                </button>
+                </li>
+            </ul>
+            </div>
+            <button class="big-button">Хочу</button>
+            
+        </div>
     </div>
     
     
@@ -86,5 +100,25 @@
 
 
     
-
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal__catalog">
+        <ul class="modal__catalog-list">
+            <li class="modal__catalog-item"><a type="button" class="catalog__button" href="">Всі</a></li>
+            <li class="modal__catalog-item"><a type="button" class="catalog__button" href="">Букети з м’яса</a></li>
+            <li class="modal__catalog-item"><a type="button" class="catalog__button" href="">Букети з фруктів</a></li>
+            <li class="modal__catalog-item"><a type="button" class="catalog__button" href="">Букети з сухофруктів</a></li>
+            <li class="modal__catalog-item"><a type="button" class="catalog__button" href="">Букети з солодощів</a></li>
+            <li class="modal__catalog-item"><a type="button" class="catalog__button" href="">Бокси</a></li>
+        </ul>
+    </div>
+</div>    
+<div class="backdrop2 is-hidden" data-modal2>
+    <div class="modal__delivery">
+        <a class="modal__delivery-link" href="">🚀 Доставка та оплата:
+        - Самовивіз ( вул. Золота,15а, або Тершаківців,2 )
+        - Доставка по Львову 90 грн. (віддалені райони такі як вул.Тракт Глинянський, Брюховичі, Сокільники та ін.. 140 грн.)
+        Діапазон часу доставки 2 год.
+        - Доставка службами таксі (послуга кур'єрська доставка) в одну сторону до Одержувача (розраховується оператором таксі)
+        - Доставка “Новою поштою” по Західній Україні деяких композицій ( узгоджується індивідуально)</a>
+</div>
 <a class="test__link" href="./portfolio.html"></a>
